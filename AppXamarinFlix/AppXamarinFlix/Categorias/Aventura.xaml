@@ -5,7 +5,26 @@
              BackgroundColor="#444444">
     <ContentPage.Content>
         <StackLayout>
-            <Image Grid.Row="0" WidthRequest="100" HeightRequest="100" x:Name="logo" />
+            <Image Grid.Row="0" HeightRequest="150" x:Name="logo" Style="{StaticResource LogoNaListaDePosters}" />
+            <Label Text="AVENTURA" Style="{StaticResource LabelTextoVermelho}" />
+
+            <ScrollView>
+                <Grid Padding="5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="300"></RowDefinition>
+                        <RowDefinition Height="300"></RowDefinition>
+                        <RowDefinition Height="300"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <ImageButton Grid.Row="0" Grid.Column="0" x:Name="btnGatoDeBotas" Style="{StaticResource ButtonPosters}" Clicked="btnGatoDeBotas_Clicked" />
+                    
+
+                </Grid>
+            </ScrollView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

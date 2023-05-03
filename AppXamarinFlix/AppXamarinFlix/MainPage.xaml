@@ -6,21 +6,23 @@
              BackgroundColor="#444444">
 
     <StackLayout>
-        <Image Grid.Row="0" WidthRequest="100" HeightRequest="100" x:Name="logo" />
-        <Grid ColumnDefinitions="*,*" RowSpacing="2" ColumnSpacing="2" Padding="0" VerticalOptions="FillAndExpand" RowDefinitions="*,*,*,*,*">
-            <Button x:Name="cat_aventura" Grid.Row="0" Grid.Column="0" Text="Aventura" Clicked="cat_aventura_Clicked"/>
-            <Button x:Name="cat_comedia" Grid.Row="0" Grid.Column="1" Text="Comedia" Clicked="cat_comedia_Clicked"/>
-            <Button x:Name="cat_drama" Grid.Row="1" Grid.Column="0" Text="Drama" Clicked="cat_drama_Clicked"/>
-            <Button x:Name="cat_terror" Grid.Row="1" Grid.Column="1" Text="Terror" Clicked="cat_terror_Clicked"/>
-            <Button x:Name="cat_ficcientifica" Grid.Row="2" Grid.Column="0" Text="Ficção Científica" Clicked="cat_ficcientifica_Clicked"/>
-            <Button x:Name="cat_suspense" Grid.Row="2" Grid.Column="1" Text="Suspense" Clicked="cat_suspense_Clicked"/>
-            <Button x:Name="cat_infantil" Grid.Row="3" Grid.Column="0" Text="Infantil" Clicked="cat_infantil_Clicked"/>
-            <Button x:Name="cat_animacao" Grid.Row="3" Grid.Column="1" Text="Animação" Clicked="cat_animacao_Clicked"/>
-            <Button x:Name="cat_documentario" Grid.Row="4" Grid.Column="0" Text="Documentário" Clicked="cat_documentario_Clicked"/>
-            <Button x:Name="cat_guerra" Grid.Row="4" Grid.Column="1" Text="Guerra" Clicked="cat_guerra_Clicked"/>
-            <Button x:Name="cat_nacional" Grid.Row="5" Grid.Column="0" Text="Nacional" Clicked="cat_nacional_Clicked"/>
-            <Button x:Name="cat_romance" Grid.Row="5" Grid.Column="1" Text="Romance" Clicked="cat_romance_Clicked"/>
-        </Grid>
+        <Image Grid.Row="0" HeightRequest="150" x:Name="logo" Style="{StaticResource LogoNaListaDePosters}" />
+        <ScrollView>
+            <Grid ColumnDefinitions="*,*" RowSpacing="2" ColumnSpacing="2" Padding="0" VerticalOptions="FillAndExpand" RowDefinitions="*,*,*,*,*">
+                <Button Style="{StaticResource ButtonVermelhoMenu}" x:Name="cat_aventura" Grid.Row="0" Grid.Column="0" Text="Aventura" Clicked="cat_aventura_Clicked"/>
+                <Button Style="{StaticResource ButtonVermelhoMenu}" x:Name="cat_comedia" Grid.Row="0" Grid.Column="1" Text="Comedia" Clicked="cat_comedia_Clicked"/>
+                <Button Style="{StaticResource ButtonVermelhoMenu}"  x:Name="cat_drama" Grid.Row="1" Grid.Column="0" Text="Drama" Clicked="cat_drama_Clicked"/>
+                <Button Style="{StaticResource ButtonVermelhoMenu}" x:Name="cat_terror" Grid.Row="1" Grid.Column="1" Text="Terror" Clicked="cat_terror_Clicked"/>
+                <Button Style="{StaticResource ButtonVermelhoMenu}" x:Name="cat_ficcientifica" Grid.Row="2" Grid.Column="0" Text="Ficção Científica" Clicked="cat_ficcientifica_Clicked"/>
+                <Button Style="{StaticResource ButtonVermelhoMenu}" x:Name="cat_suspense" Grid.Row="2" Grid.Column="1" Text="Suspense" Clicked="cat_suspense_Clicked"/>
+                <Button Style="{StaticResource ButtonVermelhoMenu}" x:Name="cat_infantil" Grid.Row="3" Grid.Column="0" Text="Infantil" Clicked="cat_infantil_Clicked"/>
+                <Button Style="{StaticResource ButtonVermelhoMenu}" x:Name="cat_animacao" Grid.Row="3" Grid.Column="1" Text="Animação" Clicked="cat_animacao_Clicked"/>
+                <Button Style="{StaticResource ButtonVermelhoMenu}" x:Name="cat_documentario" Grid.Row="4" Grid.Column="0" Text="Documentário" Clicked="cat_documentario_Clicked"/>
+                <Button Style="{StaticResource ButtonVermelhoMenu}" x:Name="cat_guerra" Grid.Row="4" Grid.Column="1" Text="Guerra" Clicked="cat_guerra_Clicked"/>
+                <Button Style="{StaticResource ButtonVermelhoMenu}" x:Name="cat_nacional" Grid.Row="5" Grid.Column="0" Text="Nacional" Clicked="cat_nacional_Clicked"/>
+                <Button Style="{StaticResource ButtonVermelhoMenu}" x:Name="cat_romance" Grid.Row="5" Grid.Column="1" Text="Romance" Clicked="cat_romance_Clicked"/>
+            </Grid>
+        </ScrollView>
     </StackLayout>
 
 </ContentPage>
