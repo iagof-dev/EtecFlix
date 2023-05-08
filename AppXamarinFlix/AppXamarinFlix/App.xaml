@@ -12,8 +12,8 @@
         <Style x:Key="ButtonVermelhoMenu" TargetType="Button">
             <Setter Property="BackgroundColor" Value="#e80000"/>
             <Setter Property="TextColor" Value="Black"/>
-            <Setter Property="FontSize" Value="26"/>
-            <Setter Property="BorderRadius" Value="10"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="CornerRadius" Value="10"/>
             <Setter Property="HorizontalOptions" Value="Fill" />
             <Setter Property="VerticalOptions" Value="Fill" />
         </Style>

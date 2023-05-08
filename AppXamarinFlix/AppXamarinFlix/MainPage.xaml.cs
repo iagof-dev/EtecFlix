@@ -34,7 +34,7 @@ namespace AppXamarinFlix
         {
             try
             {
-                Navigation.PushAsync(new Aventura());
+                Navigation.PushAsync(new Drama());
             }
             catch (Exception ex)
             {

@@ -1,10 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppXamarinFlix.Categorias.Terror">
+             x:Class="AppXamarinFlix.Categorias.Terror"
+             BackgroundColor="#444444">
     <ContentPage.Content>
         <StackLayout>
-            
+            <Image Grid.Row="0" HeightRequest="150" x:Name="logo" Style="{StaticResource LogoNaListaDePosters}" />
+            <Label Text="TERROR" Style="{StaticResource LabelTextoVermelho}" />
+
+            <ScrollView>
+                <Grid Padding="5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="300"></RowDefinition>
+                        <RowDefinition Height="300"></RowDefinition>
+                        <RowDefinition Height="300"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <ImageButton Grid.Row="0" Grid.Column="0" x:Name="btnNosferatu" Style="{StaticResource ButtonPosters}" Clicked="btnNosferatu_Clicked" />
+
+
+                </Grid>
+            </ScrollView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
