@@ -42,7 +42,7 @@
 
                         <StackLayout Grid.Row="0" Grid.Column="1" VerticalOptions="Center">
                             <Label Text="TITULO" Style="{StaticResource LabelTextoVermelho}"/>
-                            <Label Text="Gato de Botas 2" Style="{StaticResource LabelTextoBranco}"/>
+                            <Label Text="Nosferatu - O vampiro da noite" Style="{StaticResource LabelTextoBranco}"/>
                             <Label Text="ANO DE LANÇAMENTO" Style="{StaticResource LabelTextoVermelho}"/>
                             <Label Text="15 de março de 1922" Style="{StaticResource LabelTextoBranco}"/>
                             <Label Text="Direção" Style="{StaticResource LabelTextoVermelho}"/>
