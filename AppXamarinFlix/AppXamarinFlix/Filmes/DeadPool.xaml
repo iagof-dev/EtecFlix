@@ -50,7 +50,7 @@
                         </StackLayout>
 
                         <StackLayout Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Padding="10">
-                            <Label Text="SINOPSE" Style="{StaticResource LabelTextoVermelho}"/>
+                            <Label Text="Sinopse" Style="{StaticResource LabelTextoVermelho}"/>
                             <Label x:Name="sinopse" Style="{StaticResource LabelTextoBranco}"/>
                         </StackLayout>
 
