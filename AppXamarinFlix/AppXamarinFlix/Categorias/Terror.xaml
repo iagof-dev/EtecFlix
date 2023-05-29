@@ -21,6 +21,9 @@
                     </Grid.RowDefinitions>
 
                     <ImageButton Grid.Row="0" Grid.Column="0" x:Name="btnNosferatu" Style="{StaticResource ButtonPosters}" Clicked="btnNosferatu_Clicked" />
+                    <ImageButton Grid.Row="0" Grid.Column="1" x:Name="btnItACoisa" Style="{StaticResource ButtonPosters}" Clicked="btnItACoisa_Clicked" />
+                    <ImageButton Grid.Row="1" Grid.Column="0" x:Name="btnaEntidade" Style="{StaticResource ButtonPosters}" Clicked="btnaEntidade_Clicked" />
+                    <ImageButton Grid.Row="1" Grid.Column="1" x:Name="btnAorfa" Style="{StaticResource ButtonPosters}" Clicked="btnAorfa_Clicked" />
 
 
                 </Grid>

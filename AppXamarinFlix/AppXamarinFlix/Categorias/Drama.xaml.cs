@@ -19,6 +19,8 @@ namespace AppXamarinFlix.Categorias
             NavigationPage.SetHasNavigationBar(this, false);
             logo.Source = ImageSource.FromResource("AppXamarinFlix.Img.logo.png");
             btnFomeDePoder.Source = ImageSource.FromResource("AppXamarinFlix.Posters.fomedepoder.jpg");
+            btnGarotatrem.Source = ImageSource.FromResource("AppXamarinFlix.Posters.garotatrem.jpg");
+            btnCreed3.Source = ImageSource.FromResource("AppXamarinFlix.Posters.creed3.jpg");
         }
 
         private void btnFomeDePoder_Clicked(object sender, EventArgs e)
@@ -26,6 +28,30 @@ namespace AppXamarinFlix.Categorias
             try
             {
                 Navigation.PushAsync(new FomeDePoder());
+            }
+            catch (Exception ex)
+            {
+                DisplayAlert("Ops", ex.Message, "Ok");
+            }
+        }
+
+        private void btnGarotatrem_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                Navigation.PushAsync(new garotatrem());
+            }
+            catch (Exception ex)
+            {
+                DisplayAlert("Ops", ex.Message, "Ok");
+            }
+        }
+
+        private void btnCreed3_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                Navigation.PushAsync(new creed3());
             }
             catch (Exception ex)
             {

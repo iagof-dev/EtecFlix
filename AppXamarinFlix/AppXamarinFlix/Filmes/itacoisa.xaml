@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppXamarinFlix.Filmes.itacoisa"
+             BackgroundColor="#2f2f30">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <Image Grid.Row="0" HeightRequest="150" x:Name="logo" Style="{StaticResource LogoNaListaDePosters}" />
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="300" />
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+            </Grid>
+
+            <WebView Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" 
+                     x:Name="visualizador"
+                     VerticalOptions="FillAndExpand"
+                     Source="https://www.youtube.com/embed/dD264ZjfKlk?controls=0"
+                     BackgroundColor="#2f2f30"/>
+
+            <StackLayout Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
+                <ScrollView>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="300" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+
+
+
+                        <Image x:Name="poster" Grid.Row="0" Grid.Column="0" Aspect="AspectFill" />
+
+                        <StackLayout Grid.Row="0" Grid.Column="1" VerticalOptions="Center">
+                            <Label Text="TITULO" Style="{StaticResource LabelTextoVermelho}"/>
+                            <Label Text="It: A COISA" Style="{StaticResource LabelTextoBranco}"/>
+                            <Label Text="ANO DE LANÇAMENTO" Style="{StaticResource LabelTextoVermelho}"/>
+                            <Label Text="7 de setembro de 2017" Style="{StaticResource LabelTextoBranco}"/>
+                            <Label Text="Direção" Style="{StaticResource LabelTextoVermelho}"/>
+                            <Label Text="Stephen King" Style="{StaticResource LabelTextoBranco}"/>
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Padding="10">
+                            <Label Text="Sinopse" Style="{StaticResource LabelTextoVermelho}"/>
+                            <Label x:Name="sinopse" Style="{StaticResource LabelTextoBranco}"/>
+                        </StackLayout>
+
+                    </Grid>
+                </ScrollView>
+            </StackLayout>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

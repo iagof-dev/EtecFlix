@@ -11,15 +11,28 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Img\logo.png" />
+    <None Remove="Posters\aentidade.jpg" />
+    <None Remove="Posters\aorfao.jpg" />
+    <None Remove="Posters\creed3.jpg" />
     <None Remove="Posters\deadpool.jpg" />
     <None Remove="Posters\fomedepoder.jpg" />
+    <None Remove="Posters\garotatrem.jpg" />
     <None Remove="Posters\gatodebotas.jpg" />
+    <None Remove="Posters\itacoisa.jpg" />
     <None Remove="Posters\nosferatu.jpg" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Img\logo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Posters\aentidade.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Posters\aorfao.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Posters\creed3.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Posters\deadpool.jpg">
@@ -28,7 +41,13 @@
     <EmbeddedResource Include="Posters\fomedepoder.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Posters\garotatrem.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Posters\gatodebotas.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Posters\itacoisa.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Posters\nosferatu.jpg">
@@ -39,6 +58,24 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Filmes\aentidade.xaml.cs">
+      <DependentUpon>aentidade.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Filmes\aorfa.xaml.cs">
+      <DependentUpon>aorfa.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Filmes\itacoisa.xaml.cs">
+      <DependentUpon>itacoisa.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Filmes\creed3.xaml.cs">
+      <DependentUpon>creed3.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Filmes\garotatrem.xaml.cs">
+      <DependentUpon>garotatrem.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
