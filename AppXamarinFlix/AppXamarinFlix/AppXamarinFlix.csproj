@@ -13,13 +13,26 @@
   <ItemGroup>
     <None Remove="Posters\aentidade.jpg" />
     <None Remove="Posters\aorfao.jpg" />
+    <None Remove="Posters\asbranquelas.jpeg" />
     <None Remove="Posters\creed3.jpg" />
     <None Remove="Posters\deadpool.jpg" />
     <None Remove="Posters\fomedepoder.jpg" />
+    <None Remove="Posters\frozen.jpg" />
     <None Remove="Posters\garotatrem.jpg" />
     <None Remove="Posters\gatodebotas.jpg" />
+    <None Remove="Posters\homemaranha.jpg" />
     <None Remove="Posters\itacoisa.jpg" />
+    <None Remove="Posters\lenda42.jpg" />
     <None Remove="Posters\nosferatu.jpg" />
+    <None Remove="Posters\shazam.jpg" />
+    <None Remove="Posters\sonic2.jpg" />
+    <None Remove="Posters\supermariobros.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Posters\asbranquelas.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>
@@ -41,16 +54,34 @@
     <EmbeddedResource Include="Posters\fomedepoder.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Posters\frozen.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Posters\garotatrem.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Posters\gatodebotas.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Posters\homemaranha.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Posters\itacoisa.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Posters\lenda42.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Posters\nosferatu.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Posters\shazam.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Posters\sonic2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Posters\supermariobros.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>
@@ -75,6 +106,27 @@
     </Compile>
     <Compile Update="Filmes\garotatrem.xaml.cs">
       <DependentUpon>garotatrem.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Filmes\frozen.xaml.cs">
+      <DependentUpon>frozen.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Filmes\asbranquelas.xaml.cs">
+      <DependentUpon>asbranquelas.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Filmes\alenda42.xaml.cs">
+      <DependentUpon>alenda42.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Filmes\sonic2.xaml.cs">
+      <DependentUpon>sonic2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Filmes\shazam.xaml.cs">
+      <DependentUpon>shazam.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Filmes\homemaranha.xaml.cs">
+      <DependentUpon>homemaranha.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Filmes\supermariobros.xaml.cs">
+      <DependentUpon>supermariobros.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 

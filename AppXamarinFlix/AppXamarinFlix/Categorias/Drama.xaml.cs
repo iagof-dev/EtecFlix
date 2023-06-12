@@ -21,6 +21,7 @@ namespace AppXamarinFlix.Categorias
             btnFomeDePoder.Source = ImageSource.FromResource("AppXamarinFlix.Posters.fomedepoder.jpg");
             btnGarotatrem.Source = ImageSource.FromResource("AppXamarinFlix.Posters.garotatrem.jpg");
             btnCreed3.Source = ImageSource.FromResource("AppXamarinFlix.Posters.creed3.jpg");
+            btnLenda43.Source = ImageSource.FromResource("AppXamarinFlix.Posters.lenda42.jpg");
         }
 
         private void btnFomeDePoder_Clicked(object sender, EventArgs e)
@@ -52,6 +53,18 @@ namespace AppXamarinFlix.Categorias
             try
             {
                 Navigation.PushAsync(new creed3());
+            }
+            catch (Exception ex)
+            {
+                DisplayAlert("Ops", ex.Message, "Ok");
+            }
+        }
+
+        private void btnLenda43_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                Navigation.PushAsync(new alenda42());
             }
             catch (Exception ex)
             {

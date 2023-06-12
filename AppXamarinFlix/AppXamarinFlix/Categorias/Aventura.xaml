@@ -21,7 +21,10 @@
                     </Grid.RowDefinitions>
 
                     <ImageButton Grid.Row="0" Grid.Column="0" x:Name="btnGatoDeBotas" Style="{StaticResource ButtonPosters}" Clicked="btnGatoDeBotas_Clicked" />
-                    
+                    <ImageButton Grid.Row="0" Grid.Column="1" x:Name="btnMario" Style="{StaticResource ButtonPosters}" Clicked="btnMario_Clicked" />
+                    <ImageButton Grid.Row="1" Grid.Column="0" x:Name="btnShazam" Style="{StaticResource ButtonPosters}" Clicked="btnShazam_Clicked" />
+                    <ImageButton Grid.Row="1" Grid.Column="1" x:Name="btnFrozen" Style="{StaticResource ButtonPosters}" Clicked="btnFrozen_Clicked" />
+
 
                 </Grid>
             </ScrollView>
